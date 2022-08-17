@@ -8,27 +8,37 @@ div{
 /*Estilo FotodePerfil*/
 @media (min-width: 577px){
     #FotodePerfil{
-        position: absolute;
-        width: 15%;
-        border-radius: 35% 35% 65% 65%;
+        position: static;
+        width: 55%;
+        border-radius: 15% 35% 15% 35% ;
         left: 20px;
-        top: 300px;
+        top: 400px;
     }
 }
 
 @media (max-width: 576px){
     #FotodePerfil{
-        position: absolute;
-        width: 10%;
-        border-radius: 35% 35% 65% 65%;
+        position: static;
+        width: 15%;
+        border-radius: 15% 35% 15% 35% ;
         left: 45%;
-        top: 450px;
+        top: 400px;
     }
 }
 /*nombre*/
 #nombre {
     font-weight: bold;
-    margin-top: 10%;
-    
-    
+    font-style: oblique;
+    margin-top: 2%;
+}
+
+#título{
+    font-style: oblique;
+}
+
+h2, p { 
+    font-family: oblique;
+}
+strong {
+    font-style: oblique;
 }
