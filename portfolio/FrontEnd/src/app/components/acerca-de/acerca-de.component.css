@@ -28,12 +28,14 @@ div{
 /*nombre*/
 #nombre {
     font-weight: bold;
+    font-size: 25px;
     font-style: oblique;
     margin-top: 2%;
 }
 
 #título{
     font-style: oblique;
+    font-size: 25px;
 }
 
 h2, p { 
@@ -41,4 +43,8 @@ h2, p {
 }
 strong {
     font-style: oblique;
+}
+
+p {
+    font-size: 20px;
 }

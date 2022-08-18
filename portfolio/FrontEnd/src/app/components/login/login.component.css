@@ -1,0 +1,19 @@
+
+section {
+    background-image: url(../../../assets/codificación.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+
+section:before{
+    content: "";
+    width: 100%;
+    height: 800px;
+   background:sandybrown;
+   position: absolute;
+   opacity: 0.5;
+  
+
+}
