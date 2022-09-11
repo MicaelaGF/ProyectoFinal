@@ -1,13 +1,28 @@
 <div class="row">
-    <h2>Proyectos realizados</h2>
-    <div class="container">
-        <div class=" col-sm-12 col-md-7 col-lg-7 parte1">
-            <h3>Creación de App</h3>
-            <p>App usando Html Css y Js utilizando un archivo Json para cargar rutinas de una persona. Diaria, semanal y mensualmente con el total de horas.</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-lg-1 parte2 ">
-            <img src="../../../assets/app.png" class="img-fluid img-proyecto">
-        </div>
+    <h2>Proyectos Realizados</h2>
+    
+    <div class="col-lg-2 col-md-2 col-sm-2"> 
+    <button type="button" class="btn btn-outline-secondary" routerLink="/nuevopro" *ngIf="isLogged">
+        Agregar Proyecto
+    </button>
     </div>
+    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+<div class="col-lg-11 col-md-11 col-sm-11">
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Proyecto of proyecto">
+                <td>{{Proyecto.nombreP}}</td>
+                <td>{{Proyecto.descripcionP}}</td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-outline-light" routerLink="/editpro/{{Proyecto.id}}">
+                    <i class="bi bi-pen"></i></button></td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-outline-danger" (click)="delete(Proyecto.id)">
+                    <i class="bi bi-trash3"></i></button></td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
 </div>
 
