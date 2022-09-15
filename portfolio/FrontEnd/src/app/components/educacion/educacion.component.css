@@ -9,3 +9,13 @@ div{
 h3, h4{
    display: inline; 
 }
+
+.btn{
+    margin-bottom: 15px;
+}
+
+h2{ 
+    color:rgb(231, 112, 21);
+    font-style: oblique;
+    
+}

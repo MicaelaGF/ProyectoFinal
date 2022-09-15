@@ -6,3 +6,22 @@ h2{
 text-decoration: inherit;
 }
 
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    margin: 3px;
+}
+
+.btn{
+    margin-bottom: 15px;
+}
+
+h2{ 
+    color:rgb(231, 112, 21);
+    font-style: oblique;
+
+}

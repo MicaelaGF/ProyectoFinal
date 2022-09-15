@@ -1,0 +1,25 @@
+.container {
+    background-image: url(../../../assets/skills.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-weight: bold;
+    font-style: oblique;
+    position: relative;
+    border: 4px solid rgb(78, 77, 77);
+    border-radius: 20px;
+    padding-top: 70px;
+  
+}
+
+.btn{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+

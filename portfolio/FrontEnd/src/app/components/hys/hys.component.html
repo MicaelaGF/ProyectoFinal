@@ -1,11 +1,19 @@
 <div class="row">
     <h2>Hard & Soft Skills</h2>
-    <div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-      <circle-progress
-    [percent]="75"
+
+  <div class="col-lg-2">
+  <button type="button" routerLink="/newskill" class="btn btn-outline-secondary" *ngIf="isLogged">Nueva Skill</button>
+  </div>
+
+    <div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3 circle" *ngFor="let skill of skill">
+     <circle-progress
+    [percent]="(skill.porcentaje)"
     [radius]="65"
-    [imageSrc]="'../assets/html.png'"    
-    [showImage]="true"
+    [imageSrc]="''"
+    [title]="(skill.nombre)"
+    [titleColor]="'#212F3C'"
+    [showTitle]="true"    
+    [showImage]="false"
     [imageHeight]="70"
     [imageWidth]="70"
     [showUnits]="false"
@@ -13,168 +21,25 @@
     [backgroundGradient]="true"
     [backgroundColor]="'#ffffff'"
     [backgroundGradientStopColor]="'#c0c0c0'"
-    [backgroundPadding]="-10"
-    [outerStrokeWidth]="12"
-    [innerStrokeWidth]="6"
-    [outerStrokeColor]="'#f24b0f'"
+    [backgroundPadding]="-18"
+    [outerStrokeWidth]="14"
+    [innerStrokeWidth]="10"
+    [outerStrokeColor]="'#fca606'"
     [innerStrokeColor]="'#fcd305'"
     [animation]="true"
     [animationDuration]="900"
   ></circle-progress>
+ <div>
+  <td *ngIf="isLogged">
+    <button class="btn btn-outline-light"  routerLink="/editskill/{{skill.id}}">
+      <i class="bi bi-pen"></i></button></td>
+  <td *ngIf="isLogged">
+    <button class="btn btn-outline-danger" (click)="delete(skill.id)">
+      <i class="bi bi-trash3"></i></button></td>
   </div>
-  <div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-    <circle-progress
-  [percent]="80"
-  [radius]="65"
-  [imageSrc]="'../assets/CSS.png'"    
-  [showImage]="true"
-  [imageHeight]="70"
-  [imageWidth]="70"
-  [showUnits]="false"
-  [showSubtitle]="false"
-  [backgroundGradient]="true"
-  [backgroundColor]="'#ffffff'"
-  [backgroundGradientStopColor]="'#c0c0c0'"
-  [backgroundPadding]="-10"
-  [outerStrokeWidth]="12"
-  [innerStrokeWidth]="6"
-  [outerStrokeColor]="'#0527be'"
-  [innerStrokeColor]="'lightblue'"
-  [animation]="true"
-  [animationDuration]="900"
-></circle-progress>
-</div>
-<div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-  <circle-progress
-[percent]="75"
-[radius]="65"
-[imageSrc]="'../assets/bootstrap.png'"    
-[showImage]="true"
-[imageHeight]="70"
-[imageWidth]="70"
-[showUnits]="false"
-[showSubtitle]="false"
-[backgroundGradient]="true"
-[backgroundColor]="'#ffffff'"
-[backgroundGradientStopColor]="'#c0c0c0'"
-[backgroundPadding]="-10"
-[outerStrokeWidth]="12"
-[innerStrokeWidth]="6"
-[outerStrokeColor]="'#a30af6'"
-[innerStrokeColor]="'#d47dfc'"
-[animation]="true"
-[animationDuration]="900"
-></circle-progress>
-</div>
-<div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-  <circle-progress
-[percent]="70"
-[radius]="65"
-[imageSrc]="'../assets/js.png'"    
-[showImage]="true"
-[imageHeight]="70"
-[imageWidth]="70"
-[showUnits]="false"
-[showSubtitle]="false"
-[backgroundGradient]="true"
-[backgroundColor]="'#ffffff'"
-[backgroundGradientStopColor]="'#c0c0c0'"
-[backgroundPadding]="-10"
-[outerStrokeWidth]="12"
-[innerStrokeWidth]="6"
-[outerStrokeColor]="'#e7e712'"
-[innerStrokeColor]="'lightyellow'"
-[animation]="true"
-[animationDuration]="900"
-></circle-progress>
-</div>
-<div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-  <circle-progress
-[percent]="65"
-[radius]="65"
-[imageSrc]="'../assets/python.png'"    
-[showImage]="true"
-[imageHeight]="70"
-[imageWidth]="70"
-[showUnits]="false"
-[showSubtitle]="false"
-[backgroundGradient]="true"
-[backgroundColor]="'#ffffff'"
-[backgroundGradientStopColor]="'#c0c0c0'"
-[backgroundPadding]="-10"
-[outerStrokeWidth]="12"
-[innerStrokeWidth]="6"
-[outerStrokeColor]="'#2905f6'"
-[innerStrokeColor]="'#eef605'"
-[animation]="true"
-[animationDuration]="900"
-></circle-progress>
-</div>
-<div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-  <circle-progress
-[percent]="75"
-[radius]="65"
-[imageSrc]="'../assets/git.png'"    
-[showImage]="true"
-[imageHeight]="70"
-[imageWidth]="70"
-[showUnits]="false"
-[showSubtitle]="false"
-[backgroundGradient]="true"
-[backgroundColor]="'#ffffff'"
-[backgroundGradientStopColor]="'#c0c0c0'"
-[backgroundPadding]="-10"
-[outerStrokeWidth]="12"
-[innerStrokeWidth]="6"
-[outerStrokeColor]="'#c205f6'"
-[innerStrokeColor]="'#f9faf9'"
-[animation]="true"
-[animationDuration]="900"
-></circle-progress>
-</div>
-<div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-  <circle-progress
-[percent]="75"
-[radius]="65"
-[imageSrc]="'../assets/eng.png'"    
-[showImage]="true"
-[imageHeight]="70"
-[imageWidth]="70"
-[showUnits]="false"
-[showSubtitle]="false"
-[backgroundGradient]="true"
-[backgroundColor]="'#ffffff'"
-[backgroundGradientStopColor]="'#c0c0c0'"
-[backgroundPadding]="-10"
-[outerStrokeWidth]="12"
-[innerStrokeWidth]="6"
-[outerStrokeColor]="'#14c96f'"
-[innerStrokeColor]="'lightgreen'"
-[animation]="true"
-[animationDuration]="900"
-></circle-progress>
-</div>
-<div class="text-center col-xs-12 col-sm-4 col-md-3 col-lg-3">
-  <circle-progress
-[percent]="100"
-[radius]="65"
-[imageSrc]="'../assets/grupal.png'"    
-[showImage]="true"
-[imageHeight]="70"
-[imageWidth]="70"
-[showUnits]="false"
-[showSubtitle]="false"
-[backgroundGradient]="true"
-[backgroundColor]="'#ffffff'"
-[backgroundGradientStopColor]="'#c0c0c0'"
-[backgroundPadding]="-10"
-[outerStrokeWidth]="12"
-[innerStrokeWidth]="6"
-[outerStrokeColor]="'#167eda '"
-[innerStrokeColor]="'#0ab9ee'"
-[animation]="true"
-[animationDuration]="900"
-></circle-progress>
 </div>
 </div>
+
+
+
 

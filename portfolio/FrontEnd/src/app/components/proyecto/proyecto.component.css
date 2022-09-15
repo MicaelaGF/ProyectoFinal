@@ -3,22 +3,20 @@
     background-color: #fcb77b;
 }
 
-.container{
-    width: auto;
-}
-
-.parte1, .parte2{ 
-    display: inline-block;
-    text-align: justify;
-    
-        
-}
-
 #app{
     box-shadow: 10px 10px 30px #000000;
     border-radius:15%;
     border: 4px solid grey;
-    float: left;
-    
+    float: left;    
+}
+
+.btn{
+    margin-bottom: 15px;
+}
+
+h2{ 
+    color:rgb(231, 112, 21);
+    font-style: oblique;
+
 }
 
