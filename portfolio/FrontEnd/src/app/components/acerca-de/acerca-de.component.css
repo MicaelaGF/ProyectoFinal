@@ -7,24 +7,28 @@ div{
     text-align: center;
 }
 /*Estilo FotodePerfil*/
-@media (min-width: 768px){
+@media (min-width: 576px){
  #FotodePerfil{
-        position: relative;
-        width: 50%;
+        position: absolute;
+        width: 6%;
         border-radius: 15% 35% 15% 35% ;
-        left: 15px;
-        top: 10px;
+        box-shadow: 2px 4px 10px black;
+        left: 5%; 
+                 
     } 
     #nombre {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         font-style: oblique;
         margin-top: 10%;
+        color: rgb(231, 112, 21);
     }
     
     #título{
         font-style: oblique;
-        font-size: 20px;
+        font-size: 18px;
+        color: rgb(231, 112, 21);
+       margin-top: -5%;
     }
     
     h4, p { 
@@ -39,34 +43,40 @@ div{
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 575.9px){
     #FotodePerfil{
-       position: relative;
-        width: 15%;
-        border-radius: 15% 35% 15% 35% ;
-        
-      
-    }
-    #nombre {
-        font-weight: bold;
-        font-size: 18px;
-        font-style: oblique;
-        margin-top: 2%;
-    }
-    #título{
-        font-style: oblique;
-        font-size: 18px;
-    }
-    
-    h4, p { 
-        font-family: oblique;
-    }
-    strong {
-        font-style: oblique;
-    }
-    
-    p {
-        font-size: 15px;
-    }
-}
+           position: absolute;
+           width: 10%;
+           border-radius: 15% 35% 15% 35% ;
+           box-shadow: 2px 4px 10px black;
+           left: 45%; 
+           margin-top: 5px;
+                    
+       } 
+       #nombre {
+           font-weight: bold;
+           font-size: 18px;
+           font-style: oblique;
+           margin-top: 18%;
+           color: rgb(231, 112, 21);
+       }
+       
+       #título{
+           font-style: oblique;
+           font-size: 18px;
+           color: rgb(231, 112, 21);
+       }
+       
+       h4, p { 
+           font-family: oblique;
+       }
+       strong {
+           font-style: oblique;
+       }
+       
+       p {
+           font-size: 15px;
+       }
+   }
+
 

@@ -1,9 +1,15 @@
 .row{
-    padding: 20px;
+   padding: 40px;
+  
+    
+    
+    
 }
 
 div{
     background-color: #fcb77b;
+   
+    
 }
 
 .btn{
@@ -13,5 +19,7 @@ div{
 h2{ 
     color:rgb(231, 112, 21);
     font-style: oblique;
+    
+    
 
 }
