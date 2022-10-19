@@ -12,7 +12,7 @@
         <tbody>
             <tr *ngFor="let Proyecto of proyecto">
                 <td>{{Proyecto.nombreP}}</td>
-                <td>{{Proyecto.descripcionP}}<button class="btn btn-outline-light"><a href="https://github.com/MicaelaGF/app" target="_blank" ></a>Ver proyecto en Gitgub</button>
+                <td>{{Proyecto.descripcionP}}<button class="btn btn-outline-light"><a href="https://github.com/MicaelaGF/app" target="_blank" ></a>Ver proyecto en GitHub</button>
                     <img src="../../../assets/app.png" id="app" alt="imagen de proyecto"></td>
                 <td *ngIf="isLogged">
                     <button class="btn btn-outline-light" routerLink="/editpro/{{Proyecto.id}}">
