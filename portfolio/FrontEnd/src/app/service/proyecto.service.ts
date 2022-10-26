@@ -7,8 +7,8 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-//URL = 'https://micafbackend.herokuapp.com/proyecto/';
-  URL = 'http://localhost:8080/proyecto/';
+URL = 'https://micafbackend.herokuapp.com/proyecto/';
+ // URL = 'http://localhost:8080/proyecto/';
 
   constructor(private httpClient: HttpClient) { }
 

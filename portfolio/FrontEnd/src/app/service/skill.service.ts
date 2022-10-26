@@ -7,8 +7,8 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
- // URL = 'https://micafbackend.herokuapp.com/hys/';
-  URL = 'http://localhost:8080/hys/';
+  URL = 'https://micafbackend.herokuapp.com/hys/';
+ // URL = 'http://localhost:8080/hys/';
 
   constructor(private httpClient: HttpClient) { }
 
