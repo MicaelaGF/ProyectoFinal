@@ -27,6 +27,10 @@ import { NewproyectoComponent } from './components/proyecto/newproyecto.componen
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { EditskillComponent } from './components/hys/editskill.component';
 import { NewskillComponent } from './components/hys/newskill.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,7 @@ import { NewskillComponent } from './components/hys/newskill.component';
     EditproyectoComponent,
     EditskillComponent,
     NewskillComponent,
+    EditAcercaDeComponent,
  
   ],
   imports: [
@@ -59,7 +64,9 @@ import { NewskillComponent } from './components/hys/newskill.component';
     FormsModule,
     ReactiveFormsModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider,
