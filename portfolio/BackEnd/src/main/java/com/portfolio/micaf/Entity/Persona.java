@@ -37,10 +37,6 @@ public class Persona {
         this.img = img;
     }
 
-    public Persona(String nombre, String descripcion) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     public int getId() {
         return id;
     }
