@@ -10,5 +10,5 @@ export const environment = {
     measurementId: 'G-Z1CVCHE7Z6',
   },
   production: true,
-  URL: 'https://micafbackend.herokuapp.com/',
+  URL: 'https://micafbackend.herokuapp.com/'
 };
