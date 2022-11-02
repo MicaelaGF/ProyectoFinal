@@ -7,10 +7,10 @@ div{
     text-align: center;
 }
 /*Estilo FotodePerfil*/
-@media (min-width: 576px){
+@media (min-width: 577px){
  #FotodePerfil{
         position: absolute;
-        width: 6%;
+        width: 7%;
         border-radius: 15% 35% 15% 35% ;
         box-shadow: 2px 4px 10px black;
         left: 5%; 
@@ -18,7 +18,7 @@ div{
     } 
     #nombre {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
         font-style: oblique;
         margin-top: 10%;
         color: rgb(231, 112, 21);
@@ -26,7 +26,7 @@ div{
     
     #título{
         font-style: oblique;
-        font-size: 18px;
+        font-size: 20px;
         color: rgb(231, 112, 21);
        margin-top: -5%;
     }
@@ -43,7 +43,7 @@ div{
     }
 }
 
-@media (max-width: 575.9px){
+@media (max-width: 576px){
     #FotodePerfil{
            position: absolute;
            width: 10%;
@@ -55,7 +55,7 @@ div{
        } 
        #nombre {
            font-weight: bold;
-           font-size: 18px;
+           font-size: 20px;
            font-style: oblique;
            margin-top: 18%;
            color: rgb(231, 112, 21);
@@ -63,19 +63,18 @@ div{
        
        #título{
            font-style: oblique;
-           font-size: 18px;
+           font-size: 20px;
            color: rgb(231, 112, 21);
        }
        
-       h4, p { 
+       h3, p { 
            font-family: oblique;
        }
-       strong {
-           font-style: oblique;
-       }
+      
        
        p {
            font-size: 15px;
+           
        }
    }
 
